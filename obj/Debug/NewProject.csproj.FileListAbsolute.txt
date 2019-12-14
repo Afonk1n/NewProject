@@ -9,3 +9,14 @@ C:\Users\mafon\source\repos\NewProject\obj\Debug\NewProject.csproj.GenerateResou
 C:\Users\mafon\source\repos\NewProject\obj\Debug\NewProject.csproj.CoreCompileInputs.cache
 C:\Users\mafon\source\repos\NewProject\obj\Debug\NewProject.exe
 C:\Users\mafon\source\repos\NewProject\obj\Debug\NewProject.pdb
+C:\Users\mafon\OneDrive\Рабочий стол\NewProject\bin\Debug\NewProject.exe.config
+C:\Users\mafon\OneDrive\Рабочий стол\NewProject\bin\Debug\NewProject.exe
+C:\Users\mafon\OneDrive\Рабочий стол\NewProject\bin\Debug\NewProject.pdb
+C:\Users\mafon\OneDrive\Рабочий стол\NewProject\obj\Debug\NewProject.csprojAssemblyReference.cache
+C:\Users\mafon\OneDrive\Рабочий стол\NewProject\obj\Debug\NewProject.Form1.resources
+C:\Users\mafon\OneDrive\Рабочий стол\NewProject\obj\Debug\NewProject.Form2.resources
+C:\Users\mafon\OneDrive\Рабочий стол\NewProject\obj\Debug\NewProject.Properties.Resources.resources
+C:\Users\mafon\OneDrive\Рабочий стол\NewProject\obj\Debug\NewProject.csproj.GenerateResource.cache
+C:\Users\mafon\OneDrive\Рабочий стол\NewProject\obj\Debug\NewProject.csproj.CoreCompileInputs.cache
+C:\Users\mafon\OneDrive\Рабочий стол\NewProject\obj\Debug\NewProject.exe
+C:\Users\mafon\OneDrive\Рабочий стол\NewProject\obj\Debug\NewProject.pdb
