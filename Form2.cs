@@ -49,5 +49,35 @@ namespace NewProject
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+            if (label5.Visible == false)
+            {
+                label5.Visible = true;
+                label6.Visible = true;
+                label7.Visible = true;
+                label8.Visible = true;
+                label9.Visible = true;
+                pictureBox3.Visible = true;
+                pictureBox4.Visible = true;
+                pictureBox5.Visible = true;
+                pictureBox6.Visible = true;
+                pictureBox7.Visible = true;
+            }
+            else
+            {
+                label5.Visible = false;
+                label6.Visible = false;
+                label7.Visible = false;
+                label8.Visible = false;
+                label9.Visible = false;
+                pictureBox3.Visible = false;
+                pictureBox4.Visible = false;
+                pictureBox5.Visible = false;
+                pictureBox6.Visible = false;
+                pictureBox7.Visible = false;
+            }
+        }
     }
 }
