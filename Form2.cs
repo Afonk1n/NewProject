@@ -33,11 +33,28 @@ namespace NewProject
             {
                 label2.Visible = true;
                 label2.Text = "Группа: " + dataGridView2.Rows[id].Cells[5].Value.ToString();
+                label10.Visible = true;
             }
             else
             {
                 label3.Visible = true;
             }
+            DateTime startdate = new DateTime(2019, 09, 01);
+            int s=Convert.ToInt32((DateTime.Now.Date - startdate).Days);
+            double numberWeek = s / 7;
+            int number =Convert.ToInt32(Math.Floor(numberWeek));
+            
+            
+            if (number%2==0)
+            {
+                label11.Text = "Чётная неделя";
+            }
+            else
+            {
+                label11.Text = "Нечётная неделя";
+            }
+
+
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
