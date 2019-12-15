@@ -136,6 +136,7 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Главная";
             this.label5.Visible = false;
+            this.label5.Click += new System.EventHandler(this.Label5_Click);
             // 
             // label6
             // 
@@ -146,6 +147,7 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Вести МПК";
             this.label6.Visible = false;
+            this.label6.Click += new System.EventHandler(this.Label6_Click);
             // 
             // label7
             // 
@@ -156,6 +158,7 @@
             this.label7.TabIndex = 9;
             this.label7.Text = "Отделения";
             this.label7.Visible = false;
+            this.label7.Click += new System.EventHandler(this.Label7_Click);
             // 
             // label8
             // 
@@ -166,6 +169,7 @@
             this.label8.TabIndex = 10;
             this.label8.Text = "Расписание";
             this.label8.Visible = false;
+            this.label8.Click += new System.EventHandler(this.Label8_Click);
             // 
             // label9
             // 
@@ -176,6 +180,7 @@
             this.label9.TabIndex = 11;
             this.label9.Text = "Замены";
             this.label9.Visible = false;
+            this.label9.Click += new System.EventHandler(this.Label9_Click);
             // 
             // pictureBox3
             // 

@@ -96,5 +96,31 @@ namespace NewProject
                 pictureBox7.Visible = false;
             }
         }
+
+        //Ссылки------------------------------------------------
+        private void Label6_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://vk.com/vestimpk");
+        }
+
+        private void Label7_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://newlms.magtu.ru/course/view.php?id=26619");
+        }
+
+        private void Label5_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://newlms.magtu.ru/");
+        }
+
+        private void Label8_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://newlms.magtu.ru/mod/folder/view.php?id=219213");
+        }
+
+        private void Label9_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://newlms.magtu.ru/mod/folder/view.php?id=219250");
+        }
     }
 }
