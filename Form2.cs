@@ -12,6 +12,8 @@ namespace NewProject
 {
     public partial class Form2 : Form
     {
+        private Point mouseOffset;
+        private bool isMouseDown = false;
         public Form2()
         {
             InitializeComponent();
@@ -25,7 +27,7 @@ namespace NewProject
 
             dataGridView2.Rows.Insert(0, "AfonkinM", "123", "Афонькин", "Максим", "Артемович", "ПрК 17-1", 2, 0);
             dataGridView2.Rows.Insert(1, "ZakirovaR", "321", "Закирова", "Регина", "Артуровна", "Педагог", 1, 1);
-            dataGridView2.Rows.Insert(2, "FatushkinA", "123", "Фатюшкин", "Андрей", "-", "ПрК 17-1", 2, 2);
+            dataGridView2.Rows.Insert(2, "admin", "1", "Admin", "Moder", "-", "-", 3, 2);
             string name = dataGridView2.Rows[id].Cells[2].Value.ToString();
             string surname = dataGridView2.Rows[id].Cells[3].Value.ToString();
             label1.Text = name + " " + surname;
@@ -36,6 +38,15 @@ namespace NewProject
                 label10.Visible = true;
                 pictureBox8.Visible = true;
             }
+            else
+            {
+                if(Convert.ToInt32(dataGridView2.Rows[id].Cells[6].Value) == 3)
+                {
+                    label18.Enabled = true;
+                    label18.Visible = true;
+                }
+            }
+
             
             DateTime startdate = new DateTime(2019, 09, 01);
             int s=Convert.ToInt32((DateTime.Now.Date - startdate).Days);
@@ -129,6 +140,90 @@ namespace NewProject
         {
             System.Diagnostics.Process.Start("https://newlms.magtu.ru/report/magtu_record_book/");
         }
-        //Конец ссылок-------------------------------------------
+        //Конец ссылок--------------------------------------------
+       
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Visible == false)
+            {
+                textBox1.Visible = true;
+                textBox1.Enabled = true;
+                textBox2.Visible = true;
+                textBox2.Enabled = true;
+                textBox3.Visible = true;
+                textBox3.Enabled = true;
+                label15.Visible = true;
+                label15.Enabled = true;
+                label16.Visible = true;
+                label16.Enabled = true;
+                label17.Visible = true;
+                label17.Enabled = true;
+            }
+            else
+            {
+                textBox1.Visible = false;
+                textBox1.Enabled = false;
+                textBox2.Visible = false;
+                textBox2.Enabled = false;
+                textBox3.Visible = false;
+                textBox3.Enabled = false;
+                label15.Visible = false;
+                label15.Enabled = false;
+                label16.Visible = false;
+                label16.Enabled = false;
+                label17.Visible = false;
+                label17.Enabled = false;
+            }
+        }
+         private void label15_Click(object sender, EventArgs e)
+         {
+            label12.Text = textBox1.Text;
+         }
+        private void label16_Click(object sender, EventArgs e)
+        {
+            label13.Text = textBox2.Text;
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            label14.Text = textBox3.Text;
+        }
+        
+        
+       
+        //движение формы без бордера
+        private void Form2_MouseDown_1(object sender, MouseEventArgs e)
+        {
+            int xOffset;
+            int yOffset;
+            if (e.Button == MouseButtons.Left)
+            {
+                xOffset = -e.X - SystemInformation.FrameBorderSize.Width;
+                yOffset = -e.Y - SystemInformation.CaptionHeight -
+
+                SystemInformation.FrameBorderSize.Height;
+                mouseOffset = new Point(xOffset, yOffset);
+                isMouseDown = true;
+            }
+        }
+
+        private void Form2_MouseMove_1(object sender, MouseEventArgs e)
+        {
+            if (isMouseDown)
+            {
+                Point mousePos = Control.MousePosition;
+                mousePos.Offset(mouseOffset.X, mouseOffset.Y);
+                Location = mousePos;
+            }
+        }
+
+        private void Form2_MouseUp_1(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                isMouseDown = false;
+            }
+        }
     }
 }

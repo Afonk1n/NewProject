@@ -19,7 +19,7 @@ namespace NewProject
             dataGridView1.ColumnCount = 8;           
             dataGridView1.Rows.Insert(0, "AfonkinM", "123", "Афонькин", "Максим", "Артемович", "ПрК 17-1", 2, 0);
             dataGridView1.Rows.Insert(1, "ZakirovaR", "321", "Закирова", "Регина", "Артуровна", "Педагог", 1, 1);
-            dataGridView1.Rows.Insert(2, "FatushkinA", "123", "Фатюшкин", "Андрей", "-", "ПрК 17-1", 2, 2);           
+            dataGridView1.Rows.Insert(2, "admin", "1", "Admin", "Moder", "-", "-", 3, 2);           
         }
 
         private void Button1_Click(object sender, EventArgs e)
