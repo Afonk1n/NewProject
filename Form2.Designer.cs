@@ -47,8 +47,6 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -62,8 +60,9 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.bunifuDatePicker1 = new Bunifu.UI.WinForms.BunifuDatePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -77,8 +76,9 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(121)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1237, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(1237, -2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(55, 37);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -90,8 +90,9 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(121)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1193, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(1193, -2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(45, 37);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -104,7 +105,7 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(215, 568);
+            this.dataGridView2.Location = new System.Drawing.Point(837, 509);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(58, 48);
             this.dataGridView2.TabIndex = 2;
@@ -132,7 +133,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(69, 140);
+            this.label4.Location = new System.Drawing.Point(522, 177);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 30);
             this.label4.TabIndex = 6;
@@ -142,7 +143,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(130, 190);
+            this.label5.Location = new System.Drawing.Point(583, 227);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(105, 30);
             this.label5.TabIndex = 7;
@@ -153,7 +154,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(121, 231);
+            this.label6.Location = new System.Drawing.Point(574, 268);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(143, 30);
             this.label6.TabIndex = 8;
@@ -164,7 +165,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(121, 261);
+            this.label7.Location = new System.Drawing.Point(574, 298);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(143, 30);
             this.label7.TabIndex = 9;
@@ -175,7 +176,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(121, 284);
+            this.label8.Location = new System.Drawing.Point(574, 321);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(165, 30);
             this.label8.TabIndex = 10;
@@ -186,7 +187,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(121, 309);
+            this.label9.Location = new System.Drawing.Point(574, 346);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(110, 30);
             this.label9.TabIndex = 11;
@@ -197,7 +198,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(71, 178);
+            this.pictureBox3.Location = new System.Drawing.Point(524, 215);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -208,7 +209,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(72, 220);
+            this.pictureBox4.Location = new System.Drawing.Point(525, 257);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(24, 23);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -219,7 +220,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(72, 250);
+            this.pictureBox5.Location = new System.Drawing.Point(525, 287);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(26, 26);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -230,7 +231,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(72, 274);
+            this.pictureBox6.Location = new System.Drawing.Point(525, 311);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(23, 24);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -241,7 +242,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(72, 299);
+            this.pictureBox7.Location = new System.Drawing.Point(525, 336);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(24, 25);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -260,21 +261,6 @@
             this.label10.Text = "Зачётка";
             this.label10.Visible = false;
             this.label10.Click += new System.EventHandler(this.label10_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(99, 568);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(99, 30);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "label11";
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(36, 397);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 20;
             // 
             // pictureBox8
             // 
@@ -319,7 +305,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(377, 374);
+            this.label14.Location = new System.Drawing.Point(428, 406);
             this.label14.MaximumSize = new System.Drawing.Size(300, 200);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(99, 30);
@@ -406,75 +392,68 @@
             this.bunifuElipse1.ElipseRadius = 35;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // bunifuFormDock1
-            // 
-            this.bunifuFormDock1.AllowFormDragging = true;
-            this.bunifuFormDock1.AllowFormDropShadow = false;
-            this.bunifuFormDock1.AllowFormResizing = true;
-            this.bunifuFormDock1.AllowHidingBottomRegion = true;
-            this.bunifuFormDock1.AllowOpacityChangesWhileDragging = true;
-            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.BottomBorder.ShowBorder = true;
-            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.LeftBorder.ShowBorder = true;
-            this.bunifuFormDock1.BorderOptions.RightBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.RightBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.RightBorder.ShowBorder = true;
-            this.bunifuFormDock1.BorderOptions.TopBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.TopBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.TopBorder.ShowBorder = true;
-            this.bunifuFormDock1.ContainerControl = this;
-            this.bunifuFormDock1.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
-            this.bunifuFormDock1.DockingIndicatorsOpacity = 0.5D;
-            this.bunifuFormDock1.DockingOptions.DockAll = true;
-            this.bunifuFormDock1.DockingOptions.DockBottomLeft = true;
-            this.bunifuFormDock1.DockingOptions.DockBottomRight = true;
-            this.bunifuFormDock1.DockingOptions.DockFullScreen = true;
-            this.bunifuFormDock1.DockingOptions.DockLeft = true;
-            this.bunifuFormDock1.DockingOptions.DockRight = true;
-            this.bunifuFormDock1.DockingOptions.DockTopLeft = true;
-            this.bunifuFormDock1.DockingOptions.DockTopRight = true;
-            this.bunifuFormDock1.FormDraggingOpacity = 0.85D;
-            this.bunifuFormDock1.ParentForm = this;
-            this.bunifuFormDock1.ShowCursorChanges = false;
-            this.bunifuFormDock1.ShowDockingIndicators = false;
-            this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
-            this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
-            this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
-            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
-            this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.panel1.Location = new System.Drawing.Point(0, 37);
+            this.panel1.Location = new System.Drawing.Point(0, 33);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1290, 2);
             this.panel1.TabIndex = 33;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Location = new System.Drawing.Point(360, 509);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(99, 30);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "label11";
+            // 
+            // bunifuDatePicker1
+            // 
+            this.bunifuDatePicker1.BorderRadius = 1;
+            this.bunifuDatePicker1.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thick;
+            this.bunifuDatePicker1.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
+            this.bunifuDatePicker1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuDatePicker1.DisplayWeekNumbers = false;
+            this.bunifuDatePicker1.DPHeight = 0;
+            this.bunifuDatePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.bunifuDatePicker1.FillDatePicker = false;
+            this.bunifuDatePicker1.ForeColor = System.Drawing.Color.Purple;
+            this.bunifuDatePicker1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuDatePicker1.Icon")));
+            this.bunifuDatePicker1.IconColor = System.Drawing.Color.Purple;
+            this.bunifuDatePicker1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
+            this.bunifuDatePicker1.Location = new System.Drawing.Point(443, 589);
+            this.bunifuDatePicker1.MinimumSize = new System.Drawing.Size(217, 32);
+            this.bunifuDatePicker1.Name = "bunifuDatePicker1";
+            this.bunifuDatePicker1.Size = new System.Drawing.Size(217, 37);
+            this.bunifuDatePicker1.TabIndex = 35;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(39)))), ((int)(((byte)(88)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1290, 700);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.bunifuDatePicker1);
             this.Controls.Add(this.label18);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.monthCalendar1);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
@@ -490,8 +469,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
@@ -530,8 +507,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label12;
@@ -545,7 +520,8 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label11;
+        private Bunifu.UI.WinForms.BunifuDatePicker bunifuDatePicker1;
     }
 }

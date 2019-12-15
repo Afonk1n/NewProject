@@ -29,7 +29,7 @@ namespace NewProject
                 else
                 {
                     opacity = value;
-                    Parent.Invalidate(true);
+                    //this.InvokePaint(true);
                 }
 
             }

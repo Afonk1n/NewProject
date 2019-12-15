@@ -14,7 +14,7 @@ namespace NewProject
     {
         public Form2()
         {
-            InitializeComponent();     
+            InitializeComponent();
         }
         public Form2(Form1 form1, int id)
         {
@@ -36,21 +36,21 @@ namespace NewProject
             }
             else
             {
-                if(Convert.ToInt32(dataGridView2.Rows[id].Cells[6].Value) == 3)
+                if (Convert.ToInt32(dataGridView2.Rows[id].Cells[6].Value) == 3)
                 {
                     label18.Enabled = true;
                     label18.Visible = true;
                 }
             }
 
-            
+
             DateTime startdate = new DateTime(2019, 09, 01);
-            int s=Convert.ToInt32((DateTime.Now.Date - startdate).Days);
+            int s = Convert.ToInt32((DateTime.Now.Date - startdate).Days);
             double numberWeek = s / 7;
-            int number =Convert.ToInt32(Math.Floor(numberWeek));
-            
-            
-            if (number%2==0)
+            int number = Convert.ToInt32(Math.Floor(numberWeek));
+
+
+            if (number % 2 == 0)
             {
                 label11.Text = "Чётная неделя";
             }
@@ -61,7 +61,7 @@ namespace NewProject
 
 
         }
-        
+
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -79,17 +79,17 @@ namespace NewProject
 
         private void pictureBox1_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox1.BackColor = Color.FromArgb(43, 43, 60);
+            pictureBox1.BackColor = Color.FromArgb(45, 50, 121);
         }
 
         private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
         {
-            pictureBox2.BackColor = Color.FromArgb(75, 75, 89);
+            pictureBox2.BackColor = Color.FromArgb(72, 76, 150);
         }
 
         private void pictureBox2_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox2.BackColor = Color.FromArgb(43, 43, 60);
+            pictureBox2.BackColor = Color.FromArgb(45, 50, 121);
         }
 
         private void Label4_Click(object sender, EventArgs e)
@@ -153,7 +153,7 @@ namespace NewProject
             System.Diagnostics.Process.Start("https://newlms.magtu.ru/report/magtu_record_book/");
         }
         //Конец ссылок--------------------------------------------
-       
+
 
         private void label18_Click(object sender, EventArgs e)
         {
@@ -188,10 +188,10 @@ namespace NewProject
                 label17.Enabled = false;
             }
         }
-         private void label15_Click(object sender, EventArgs e)
-         {
+        private void label15_Click(object sender, EventArgs e)
+        {
             label12.Text = textBox1.Text;
-         }
+        }
         private void label16_Click(object sender, EventArgs e)
         {
             label13.Text = textBox2.Text;
