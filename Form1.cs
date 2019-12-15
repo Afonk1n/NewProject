@@ -63,7 +63,7 @@ namespace NewProject
 
         private void timer1_Tick(object sender, EventArgs e)
         {           
-            Form2 secondForm = new Form2(this, id);
+            Main secondForm = new Main(this, id);
             secondForm.Show();
             this.Hide();           
             timer1.Stop();

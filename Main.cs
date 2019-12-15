@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace NewProject
 {
-    public partial class Form2 : Form
+    public partial class Main : Form
     {
-        public Form2()
+        public Main()
         {
             InitializeComponent();
         }
-        public Form2(Form1 form1, int id)
+        public Main(Form1 form1, int id)
         {
             InitializeComponent();
             dataGridView2.ColumnCount = 8;
@@ -94,9 +94,9 @@ namespace NewProject
 
         private void Label4_Click(object sender, EventArgs e)
         {
-            if (label5.Visible == false)
+            if (bunifuButton1.Visible == false)
             {
-                label5.Visible = true;
+                bunifuButton1.Visible = true;
                 label6.Visible = true;
                 label7.Visible = true;
                 label8.Visible = true;
@@ -109,7 +109,7 @@ namespace NewProject
             }
             else
             {
-                label5.Visible = false;
+                bunifuButton1.Visible = false;
                 label6.Visible = false;
                 label7.Visible = false;
                 label8.Visible = false;
@@ -131,11 +131,6 @@ namespace NewProject
         private void Label7_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://newlms.magtu.ru/course/view.php?id=26619");
-        }
-
-        private void Label5_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://newlms.magtu.ru/");
         }
 
         private void Label8_Click(object sender, EventArgs e)
@@ -200,6 +195,11 @@ namespace NewProject
         private void label17_Click(object sender, EventArgs e)
         {
             label14.Text = textBox3.Text;
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://newlms.magtu.ru/");
         }
     }
 }
