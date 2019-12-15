@@ -279,7 +279,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(872, 303);
+            this.pictureBox8.Location = new System.Drawing.Point(872, 318);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(23, 21);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -370,7 +370,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(689, 356);
+            this.textBox3.Location = new System.Drawing.Point(689, 366);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Both;
