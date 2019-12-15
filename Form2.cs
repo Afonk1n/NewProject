@@ -34,11 +34,9 @@ namespace NewProject
                 label2.Visible = true;
                 label2.Text = "Группа: " + dataGridView2.Rows[id].Cells[5].Value.ToString();
                 label10.Visible = true;
+                pictureBox8.Visible = true;
             }
-            else
-            {
-                label3.Visible = true;
-            }
+            
             DateTime startdate = new DateTime(2019, 09, 01);
             int s=Convert.ToInt32((DateTime.Now.Date - startdate).Days);
             double numberWeek = s / 7;
@@ -56,6 +54,7 @@ namespace NewProject
 
 
         }
+        
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
@@ -95,6 +94,9 @@ namespace NewProject
                 pictureBox6.Visible = false;
                 pictureBox7.Visible = false;
             }
+            
+
+            
         }
 
         //Ссылки------------------------------------------------
@@ -121,6 +123,11 @@ namespace NewProject
         private void Label9_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://newlms.magtu.ru/mod/folder/view.php?id=219250");
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://newlms.magtu.ru/report/magtu_record_book/");
         }
         //Конец ссылок-------------------------------------------
     }
