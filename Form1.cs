@@ -19,8 +19,8 @@ namespace NewProject
         {
             
             InitializeComponent();
-            timer1.Interval = 5000;
-            timer2.Interval = 5000;
+            timer1.Interval = 2000;
+            timer2.Interval = 2000;
             dataGridView1.ColumnCount = 8;           
             dataGridView1.Rows.Insert(0, "AfonkinM", "123", "Афонькин", "Максим", "Артемович", "ПрК 17-1", 2, 0);
             dataGridView1.Rows.Insert(1, "ZakirovaR", "321", "Закирова", "Регина", "Артуровна", "Педагог", 1, 1);

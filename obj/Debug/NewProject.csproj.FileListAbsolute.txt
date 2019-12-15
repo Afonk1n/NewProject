@@ -19,3 +19,20 @@ C:\Users\mafon\OneDrive\Рабочий стол\NewProject\obj\Debug\NewProject.
 C:\Users\mafon\OneDrive\Рабочий стол\NewProject\obj\Debug\NewProject.csproj.GenerateResource.cache
 C:\Users\mafon\OneDrive\Рабочий стол\NewProject\obj\Debug\NewProject.exe
 C:\Users\mafon\OneDrive\Рабочий стол\NewProject\obj\Debug\NewProject.pdb
+C:\Users\Andrey\Documents\GitHub\NewProject\bin\Debug\NewProject.exe.config
+C:\Users\Andrey\Documents\GitHub\NewProject\bin\Debug\NewProject.exe
+C:\Users\Andrey\Documents\GitHub\NewProject\bin\Debug\NewProject.pdb
+C:\Users\Andrey\Documents\GitHub\NewProject\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+C:\Users\Andrey\Documents\GitHub\NewProject\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Andrey\Documents\GitHub\NewProject\bin\Debug\Bunifu.Core.dll
+C:\Users\Andrey\Documents\GitHub\NewProject\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+C:\Users\Andrey\Documents\GitHub\NewProject\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\Andrey\Documents\GitHub\NewProject\obj\Debug\NewProject.csprojAssemblyReference.cache
+C:\Users\Andrey\Documents\GitHub\NewProject\obj\Debug\NewProject.exe.config
+C:\Users\Andrey\Documents\GitHub\NewProject\obj\Debug\NewProject.Form1.resources
+C:\Users\Andrey\Documents\GitHub\NewProject\obj\Debug\NewProject.Form2.resources
+C:\Users\Andrey\Documents\GitHub\NewProject\obj\Debug\NewProject.Properties.Resources.resources
+C:\Users\Andrey\Documents\GitHub\NewProject\obj\Debug\NewProject.csproj.GenerateResource.cache
+C:\Users\Andrey\Documents\GitHub\NewProject\obj\Debug\NewProject.csproj.CopyComplete
+C:\Users\Andrey\Documents\GitHub\NewProject\obj\Debug\NewProject.exe
+C:\Users\Andrey\Documents\GitHub\NewProject\obj\Debug\NewProject.pdb

@@ -12,13 +12,9 @@ namespace NewProject
 {
     public partial class Form2 : Form
     {
-        private Point mouseOffset;
-        private bool isMouseDown = false;
         public Form2()
         {
-            InitializeComponent();
-           
-                     
+            InitializeComponent();     
         }
         public Form2(Form1 form1, int id)
         {
@@ -66,7 +62,6 @@ namespace NewProject
 
         }
         
-
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -75,6 +70,26 @@ namespace NewProject
         private void PictureBox2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBox1.BackColor = Color.FromArgb(189, 56, 56);
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.BackColor = Color.FromArgb(43, 43, 60);
+        }
+
+        private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBox2.BackColor = Color.FromArgb(75, 75, 89);
+        }
+
+        private void pictureBox2_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox2.BackColor = Color.FromArgb(43, 43, 60);
         }
 
         private void Label4_Click(object sender, EventArgs e)
@@ -105,9 +120,6 @@ namespace NewProject
                 pictureBox6.Visible = false;
                 pictureBox7.Visible = false;
             }
-            
-
-            
         }
 
         //Ссылки------------------------------------------------
@@ -188,42 +200,6 @@ namespace NewProject
         private void label17_Click(object sender, EventArgs e)
         {
             label14.Text = textBox3.Text;
-        }
-        
-        
-       
-        //движение формы без бордера
-        private void Form2_MouseDown_1(object sender, MouseEventArgs e)
-        {
-            int xOffset;
-            int yOffset;
-            if (e.Button == MouseButtons.Left)
-            {
-                xOffset = -e.X - SystemInformation.FrameBorderSize.Width;
-                yOffset = -e.Y - SystemInformation.CaptionHeight -
-
-                SystemInformation.FrameBorderSize.Height;
-                mouseOffset = new Point(xOffset, yOffset);
-                isMouseDown = true;
-            }
-        }
-
-        private void Form2_MouseMove_1(object sender, MouseEventArgs e)
-        {
-            if (isMouseDown)
-            {
-                Point mousePos = Control.MousePosition;
-                mousePos.Offset(mouseOffset.X, mouseOffset.Y);
-                Location = mousePos;
-            }
-        }
-
-        private void Form2_MouseUp_1(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                isMouseDown = false;
-            }
         }
     }
 }
