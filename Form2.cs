@@ -12,8 +12,6 @@ namespace NewProject
 {
     public partial class Form2 : Form
     {
-        private Point mouseOffset;
-        private bool isMouseDown = false;
         public Form2()
         {
             InitializeComponent();
@@ -30,13 +28,14 @@ namespace NewProject
             dataGridView2.Rows.Insert(2, "admin", "1", "Admin", "Moder", "-", "-", 3, 2);
             string name = dataGridView2.Rows[id].Cells[2].Value.ToString();
             string surname = dataGridView2.Rows[id].Cells[3].Value.ToString();
-            label1.Text = name + " " + surname;
+            label1.Text = name;
+            label3.Text = surname;
             if (Convert.ToInt32(dataGridView2.Rows[id].Cells[6].Value) == 2)
             {
                 label2.Visible = true;
                 label2.Text = "Группа: " + dataGridView2.Rows[id].Cells[5].Value.ToString();
                 label10.Visible = true;
-                pictureBox8.Visible = true;
+                //pictureBox8.Visible = true;
             }
             else
             {
@@ -53,7 +52,6 @@ namespace NewProject
             double numberWeek = s / 7;
             int number =Convert.ToInt32(Math.Floor(numberWeek));
             
-            
             if (number%2==0)
             {
                 label11.Text = "Чётная неделя";
@@ -62,86 +60,7 @@ namespace NewProject
             {
                 label11.Text = "Нечётная неделя";
             }
-
-
         }
-        
-
-        private void PictureBox1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void PictureBox2_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void Label4_Click(object sender, EventArgs e)
-        {
-            if (label5.Visible == false)
-            {
-                label5.Visible = true;
-                label6.Visible = true;
-                label7.Visible = true;
-                label8.Visible = true;
-                label9.Visible = true;
-                pictureBox3.Visible = true;
-                pictureBox4.Visible = true;
-                pictureBox5.Visible = true;
-                pictureBox6.Visible = true;
-                pictureBox7.Visible = true;
-            }
-            else
-            {
-                label5.Visible = false;
-                label6.Visible = false;
-                label7.Visible = false;
-                label8.Visible = false;
-                label9.Visible = false;
-                pictureBox3.Visible = false;
-                pictureBox4.Visible = false;
-                pictureBox5.Visible = false;
-                pictureBox6.Visible = false;
-                pictureBox7.Visible = false;
-            }
-            
-
-            
-        }
-
-        //Ссылки------------------------------------------------
-        private void Label6_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://vk.com/vestimpk");
-        }
-
-        private void Label7_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://newlms.magtu.ru/course/view.php?id=26619");
-        }
-
-        private void Label5_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://newlms.magtu.ru/");
-        }
-
-        private void Label8_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://newlms.magtu.ru/mod/folder/view.php?id=219213");
-        }
-
-        private void Label9_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://newlms.magtu.ru/mod/folder/view.php?id=219250");
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://newlms.magtu.ru/report/magtu_record_book/");
-        }
-        //Конец ссылок--------------------------------------------
-       
 
         private void label18_Click(object sender, EventArgs e)
         {
@@ -176,7 +95,9 @@ namespace NewProject
                 label17.Enabled = false;
             }
         }
-         private void label15_Click(object sender, EventArgs e)
+
+        //-------------------------Админка-------------------------//
+        private void label15_Click(object sender, EventArgs e)
          {
             label12.Text = textBox1.Text;
          }
@@ -189,41 +110,38 @@ namespace NewProject
         {
             label14.Text = textBox3.Text;
         }
-        
-        
-       
-        //движение формы без бордера
-        private void Form2_MouseDown_1(object sender, MouseEventArgs e)
-        {
-            int xOffset;
-            int yOffset;
-            if (e.Button == MouseButtons.Left)
-            {
-                xOffset = -e.X - SystemInformation.FrameBorderSize.Width;
-                yOffset = -e.Y - SystemInformation.CaptionHeight -
+        //-------------------------Админка-------------------------//
 
-                SystemInformation.FrameBorderSize.Height;
-                mouseOffset = new Point(xOffset, yOffset);
-                isMouseDown = true;
-            }
+        //-------------------------Кнопки формы-------------------------//
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
-        private void Form2_MouseMove_1(object sender, MouseEventArgs e)
+        private void PictureBox2_Click(object sender, EventArgs e)
         {
-            if (isMouseDown)
-            {
-                Point mousePos = Control.MousePosition;
-                mousePos.Offset(mouseOffset.X, mouseOffset.Y);
-                Location = mousePos;
-            }
+            this.WindowState = FormWindowState.Minimized;
         }
 
-        private void Form2_MouseUp_1(object sender, MouseEventArgs e)
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                isMouseDown = false;
-            }
+            pictureBox1.BackColor = Color.FromArgb(189, 56, 56);
         }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.BackColor = Color.FromArgb(45, 50, 121);
+        }
+
+        private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBox2.BackColor = Color.FromArgb(60, 64, 137);
+        }
+
+        private void pictureBox2_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox2.BackColor = Color.FromArgb(45, 50, 121);
+        }
+        //-------------------------Кнопки формы-------------------------//
     }
 }
