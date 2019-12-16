@@ -142,6 +142,11 @@ namespace NewProject
         {
             pictureBox2.BackColor = Color.FromArgb(45, 50, 121);
         }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+
+        }
         //-------------------------Кнопки формы-------------------------//
     }
 }
