@@ -37,6 +37,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
       <HintPath>..\..\..\source\UI WinForms\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
+      <HintPath>..\..\..\source\UI WinForms\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
       <HintPath>..\..\..\source\UI WinForms\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
     </Reference>
